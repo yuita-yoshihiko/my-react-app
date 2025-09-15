@@ -1,12 +1,43 @@
+import Header from './Header'
+import MainContent from './MainContent'
+import CardSection from './CardSection'
+import Footer from './Footer'
+import GreetingSection from './GreetingSection'
+import CardExample from './CardExample'
+import ClickExample from './ClickExample'
+import InputExample from './InputExample'
+import EventExample from './EventExample'
+import FormExample from './FormExample'
+import Counter from './Counter'
+import MessageApp from './MessageApp'
+import BasicEffect from './BasicEffect'
+import UserData from './UserData'
+import Timer from './Timer'
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
-      <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">React + Tailwind CSS</h1>
-        <p className="text-lg text-gray-600 text-center">Tailwind CSSを使ったReactアプリケーションの例です。</p>
-        <p className="text-lg font-bold text-red-500 text-center mt-4">ここは赤字になります。</p>
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      <Header />
+
+      <div className="flex-1">
+        <MainContent />
+        <CardSection />
+        <GreetingSection />
+        <CardExample />
+        <ClickExample />
+        <InputExample />
+        <EventExample />
+        <FormExample />
+        <Counter />
+        <MessageApp />
+        <BasicEffect />
+        <UserData />
+        <Timer />
       </div>
+
+      <Footer />
     </div>
-  );
+  )
 }
-export default App;
+
+export default App
